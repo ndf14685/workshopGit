@@ -1,0 +1,240 @@
+IMPORTANTE: Al realizar el experimento con un USB: antes de extraer la unidad de nuestro equipo se tiene que desmontarla pues sino habrá información temporal en la RAM que no se grabará lo cual esto implicaría que el repositorio remoto (el .git del pendrive) se corrompa y perdamos las historias.
+
+
+  742  mkdir Workshop 
+  743  cd ..
+  744  ls
+  745  cd Documents/
+  746  ls
+  747  cd Workshop
+  749  ls
+  750  git init 
+  751  git branch -a
+  752  git branch --all
+  753* ls
+  754* pwd
+  755* cd /media/itdev
+  756* ls
+  757* cd LUKS
+  758* ls
+  759* mkdir WorkshopRemote
+  760* cd WorkshopRemote
+  761* git init
+  763  git checkout -b CORONEL-archivo
+  764  git checkout master
+  765  git checkout -b master
+  766  git branch -a
+
+Se crea un archivo con el editor de texto Sublime Text
+  767  subl README
+  
+  771  git status
+  772  git add .
+  773  git status
+  774  git commit -am "Readme brai"
+  775  ggpush
+  776  git branch -a
+  777  git remote -v
+  778  git remote add /media/itdev/LUKS
+  779* subl ReadmeRemote
+  780* git add .
+  781* git status
+  782* git commit -m "Se agrega el readme al remote"
+  783* ggpush
+  784* git status
+  785* exit
+  786  git remote add usbLucas /media/itdev/LUKS/WorkshopRemote
+  787  git remote -v
+  789  git branch -a
+  790  git log
+  791  ll
+  792  git push usbLucas la-pecera
+  793  git push usbLucas/la-pecera
+  794  git push --help
+  795  git push -f usbLucas/la-pecera
+  796* git fetch
+  797  git push --set-upstream usbLucas/la-pecera
+  798  git config --global push.default simple
+  799  git push  usbLucas/la-pecera
+  800  git push --set-upstream usbLucas/la-pecera
+  801  git push --set-upstream usbLucas la-pecera
+  802  git push usbLucas
+  803  git push usbLucas lapecera
+  804  git push -u usbLucas lapecera
+  805  git fetch
+  806  git fetch usbLucas
+  807  git merge usbLucas/master
+  808  ggpush
+  809  alias ggpush
+  810  git push -u usbLucas lapecera
+  811* toch 
+  812* touch prueba
+  813  git push usbLucas
+  814  git push --set-upstream usbLucas
+  815  git push --set-upstream usbLucas master
+  816* git checkout .
+  817* rm prueba
+  818* git checkout -b no-branch
+  819  git push --set-upstream usbLucas master
+  820* git checkout master
+  821* git log
+  822* cd ..
+  823  ls
+  824  subl Agenda
+  825  git commit -am "First contacts"
+  826  git branch -a
+  827  git add .
+  828  git status
+  829  git commit -m "First contacts"
+  830* ls
+  831  git push usbLucas/master
+  832  git remote -v
+  833  git fetch
+  834  git push usbLucas master
+  835* cd LUKS
+  836* ls
+  837* cd WorkshopRemote
+  838* ls
+  839* git checkout no-branch
+  840  git push usbLucas master
+  841  git fetch usbLucas
+  842  git pull usbLucas
+  843  git push usbLucas master
+  844* touch prueba
+  845  ls
+  846* cd /home
+  847* ls
+  848* cd itdev/
+  849* cd /media/itdev/LUKS
+  850* cd ..
+  851* cd LUKS
+  852* ls
+  853* chmod 777 WorkshopRemote
+  854* sudo chmod 777 WorkshopRemote
+  855* ls -l
+  856* sudo chmod 777 WorkshopRemote
+  857* ll
+  858* pwd
+  859* cd ..
+  860* ll
+  861* sudo chmod 777 WorkshopRemote
+  862* ls
+  863* cd ..
+  864* ls
+  865* cd LUKS
+  866* ls
+  867* sudo chmod 777 WorkshopRemote
+  868* ll
+  869* cd WorkshopRemote
+  870* touch asd
+  871  git push usbLucas master
+  872* exit
+  873* touch asd
+  874* git branch
+  875* git checkout no-branch
+  876* whoami
+  877* ll
+  878* touch asd2
+  879* cd ..
+  880* cd '
+  881* cd -
+  882* cd WorkshopRemote
+  883  git push usbLucas master
+  884* git branch -av
+  885  git pull usbLucas master
+  886  git status
+  887  ls
+  888  git log
+  889  cat README
+  890  find .git -name '*3847'
+  891* la
+  892* find .git -name '*3847'
+  893  history | grep push
+  894  git fetch
+  895* ls -a
+  896* rm -r .git
+  897* git init
+  898  git fetch
+  899  histry|grep push
+  900  history|grep push
+  901  git push usbLucas master
+  902* git checkout -b no-branch
+  903  git push usbLucas master
+  904* git checkout master
+  905* git log
+  906* touch prueba
+  907* git add prueba
+  908* git commit -m prueba
+  909* git log
+  910* git checkout master
+  911* git checkout no-branch
+  912* git branch
+  913* git checkout -b no-branch
+  914  git push usbLucas master
+  915  git pull usbLucas master
+  916  git push usbLucas master
+  917* cd -
+  918* top
+  919  git branch -a
+  920  pwd
+  921  git remote -v
+  922  git remote add remoteGitHub https://github.com/ndf14685/workshopGit.git
+  923  git remote -v
+  924  git remote rename remoteGitHub githubNestor
+  925  git remote -v
+  926  git fetch githubNestor
+  927  git checkout -b masterNestor
+  928  git branch
+  929  git pull githubNestor master
+  930  git log --graph
+  931  ll
+  932  cat README
+  933  history| less
+  934  vim README.md
+  935  nano README.md
+  936  rm README
+  937  ll
+  938  git status
+  939  git dif
+  940  git diff
+  941  git add .
+  942  git commit -am "Merge of Readme"
+  943  git push githubNestor master
+  944  git remote add githubBraian https://github.com/bcoronel-fusap/workshopGit.git
+  945  git remote -v
+  946  git push githubBraian master
+  947  git log
+  948* git config --global user.name Braian Coronel
+  949  git pull githubBraian master
+  950  git push githubBraian master
+  951  git branch -av
+  952  git pull githubBraian master
+  953  git push githubBraian masterNestor
+  954  git branch -av
+  955  git pull githubBraian/master
+  956  git pull githubBraian master
+  957  git merge githubBraian/master
+  958  git push githubBraian master
+  959* exit
+  960  ls
+  961  subl nombre
+  962  subl apellido
+  963  gedit domicilio
+  964  subl NestorFleitas.txt
+  965  git add .
+  966  git status
+  967  git commit -m "Change language"
+  968  git push githubBraian masterNestor
+  969* exit
+  970  history|less
+  971  history|tail -n 50
+  972  history|tail -n 50|less
+  973  history|less
+  974  history|tail -n 260
+  975  cd ..
+  976  ll
+  977  history|tail -n 260 |tee history-braian-workshp-git
+  978  subl history-braian-workshp-git
+  979* history|less
+  980* exit
+  981  history|tail -n 320 |tee history-braian-workshp-git
